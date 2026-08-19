@@ -1,0 +1,37 @@
+# File: data/sample_campaign_data.csv
+# Enterprise Practice: Elsamag IT Solutions
+# Author & Lead Technical Consultant: Samuel Chinwendu Agu
+# Target Engine: sql-marketing-campaignroi-join-engine
+
+# ==============================================================================
+# TABLE: campaigns
+# ==============================================================================
+campaign_id,campaign_name,channel_source,start_date,end_date
+101,Summer_Omnichannel_Promo,Social Ads,2026-06-01,2026-08-31
+102,Cold_Lookalike_Prospect,Meta Ads,2026-06-15,2026-07-31
+103,Video_Brand_Awareness,YouTube Ads,2026-05-01,2026-08-15
+104,Retargeting_SaaS_Q3,Paid Search,2026-07-01,2026-09-30
+
+# ==============================================================================
+# TABLE: ad_spend_daily (Sample Aggregated Excerpt)
+# ==============================================================================
+spend_id,campaign_id,spend_date,spend_amount
+1,101,2026-06-01,1140.00
+2,101,2026-06-02,1140.00
+3,102,2026-06-15,946.67
+4,102,2026-06-16,946.67
+5,103,2026-05-01,630.00
+6,103,2026-05-02,630.00
+7,104,2026-07-01,416.67
+8,104,2026-07-02,416.67
+
+# ==============================================================================
+# TABLE: conversions (Sample Transactional Excerpt)
+# ==============================================================================
+conversion_id,campaign_id,conversion_timestamp,revenue_generated
+1,104,2026-07-01 10:14:22,83.41
+2,104,2026-07-01 14:32:05,83.41
+3,101,2026-06-01 09:20:11,98.48
+4,101,2026-06-01 18:45:30,98.48
+5,103,2026-05-01 11:05:49,105.37
+6,102,2026-06-15 16:40:12,62.55
