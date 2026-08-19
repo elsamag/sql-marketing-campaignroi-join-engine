@@ -37,6 +37,7 @@ The relational engine operates across a normalized three-tier relational schema:
       ├────► [ ad_spend_daily ] (FK: campaign_id)
       │
       └────► [ conversions ]   (FK: campaign_id)
+```
 
 ## Architectural Data Transformation Flow
 
